@@ -5,6 +5,8 @@
     <classes>
       <class name="testcases.SimplilearnLoginTest">
         <methods>
+          <include name="dataClean"/>
+          <include name="dataSetup"/>
           <include name="Test2"/>
           <include name="TearDown"/>
           <include name="SetUp"/>

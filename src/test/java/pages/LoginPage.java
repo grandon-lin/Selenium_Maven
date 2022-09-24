@@ -11,7 +11,7 @@ public class LoginPage {
 	
 	//************************ Objects *******************************
 	
-	@FindBy(linkText = "Log in")
+	@FindBy(xpath = "//a[@title=\"Log in\"]")
 	WebElement LoginLink;
 	
 	@FindBy(name = "user_login")

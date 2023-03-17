@@ -3,6 +3,7 @@ package testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -10,6 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import pages.LoginPage;
 
+@Listeners(ListenerExample.class)
 
 public class SimplilearnLoginTest extends BaseClass {
 	
@@ -28,7 +30,7 @@ public class SimplilearnLoginTest extends BaseClass {
 		String ExpError = "The email or password you have entered is invalid.";
 		
 		
-		Assert.assertTrue(Error.isDisplayed());
+		Assert.assertTrue(!Error.isDisplayed());
 		
 		//Or
 //		Assert.assertEquals(ActError, ExpError);

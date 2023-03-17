@@ -14,13 +14,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 public class BaseClass {
 	
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	XSSFWorkbook wbook;
 	XSSFSheet sheet;
@@ -77,6 +78,12 @@ public class BaseClass {
 		
 		//Step7: Close the browser
 		driver.close();
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
 	}
 
 }

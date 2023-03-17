@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.366 s - in TestSuite
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 2.744 s <<< FAILURE! - in TestSuite
+testcases.SimplilearnLoginTest.SetUp[public void testcases.SimplilearnLoginTest.Test1()](0)  Time elapsed: 2.382 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 111.0.5563.65 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0AAQTU0', ip: '192.168.2.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0053DF13+2219795]
+	Ordinal0 [0x004D2841+1779777]
+	Ordinal0 [0x003E423D+803389]
+	Ordinal0 [0x004064AC+943276]
+	Ordinal0 [0x004019F0+924144]
+	Ordinal0 [0x003FF179+913785]
+	Ordinal0 [0x004336B9+1128121]
+	Ordinal0 [0x0043331A+1127194]
+	Ordinal0 [0x0042E616+1107478]
+	Ordinal0 [0x00407F89+950153]
+	Ordinal0 [0x00408F56+954198]
+	GetHandleVerifier [0x00832CB2+3040210]
+	GetHandleVerifier [0x00822BB4+2974420]
+	GetHandleVerifier [0x005D6A0A+565546]
+	GetHandleVerifier [0x005D5680+560544]
+	Ordinal0 [0x004D9A5C+1808988]
+	Ordinal0 [0x004DE3A8+1827752]
+	Ordinal0 [0x004DE495+1827989]
+	Ordinal0 [0x004E80A4+1867940]
+	BaseThreadInitThunk [0x768000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77D87BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D87B8E+238]
+
+

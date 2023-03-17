@@ -5,15 +5,15 @@
     <parameter name="uname" value="kkk@xyz.com"/>
     <parameter name="pwd" value="Abc@1234"/>
     <classes>
-      <class name="testcases.HomeTest">
+      <class name="testcases.SimplilearnLoginTest">
         <methods>
-          <include name="Test1"/>
           <include name="dataSetup"/>
           <include name="dataClean"/>
           <include name="SetUp"/>
           <include name="TearDown"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- testcases.HomeTest -->
+      </class> <!-- testcases.SimplilearnLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
